@@ -1,0 +1,1365 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estaciones de Radio</title>
+  <style>
+    /* Estilos generales */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    h1 {
+      text-align: center;
+      margin-top: 0;
+    }
+    
+    .radio-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .radio-list-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      padding: 10px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .radio-logo {
+      max-width: 100px;
+      height: auto;
+      margin-right: 20px;
+    }
+    
+    .radio-info {
+      flex-grow: 1;
+    }
+    
+    .radio-name {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 0;
+    }
+    
+    .radio-frequency {
+      font-size: 14px;
+      margin: 5px 0;
+    }
+    
+    .radio-player {
+      margin-top: 10px;
+    }
+    
+    /* Estilos para dispositivos móviles */
+    @media (max-width: 576px) {
+      .container {
+        padding: 10px;
+      }
+      
+      .radio-list-item {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      
+      .radio-logo {
+        max-width: 80px;
+      }
+      
+      .radio-info {
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Estaciones de Radio</h1>
+    <h5>Las Frecuencias mostradas a continuación, pertenece el área metropolitana de Santiago. Consulte el apartado de frecuencia de la aplicación, si se encuentra en otra ubicación.</h5>
+    <ul class="radio-list">
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/LPbE98zKga-1.png" alt="ADN Radio Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">ADN Radio</h2>
+          <p class="radio-frequency">Frecuencia: 91.7 FM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://playerservices.streamtheworld.com/api/livestream-redirect/ADNAAC_SC" type="audio/mpeg">
+              <source src="https://playerservices.streamtheworld.com/api/livestream-redirect/ADNAAC_SC" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/yQWd3pdnYE.jpg" alt="Radio Imagina Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Imagina</h2>
+          <p class="radio-frequency">Frecuencia: 88.1 FM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://playerservices.streamtheworld.com/api/livestream-redirect/IMAGINAAAC_SC?csegid=12000" type="audio/mpeg">
+              <source src="https://playerservices.streamtheworld.com/api/livestream-redirect/IMAGINAAAC_SC?csegid=12000" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/dZrufzms4G-1.jpg" alt="Radio Cooperativa Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Cooperativa</h2>
+          <p class="radio-frequency">Frecuencia: 93.3 FM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://unlimited4-us.dps.live/cooperativafm/mp3/icecast.audio" type="audio/mpeg">
+              <source src="https://unlimited4-us.dps.live/cooperativafm/mp3/icecast.audio" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/hNtDVvwQqV-1.jpg" alt="Radio Pudahuel Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Pudahuel</h2>
+          <p class="radio-frequency">Frecuencia: 90.5 FM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://playerservices.streamtheworld.com/api/livestream-redirect/PUDAHUEL_SC" type="audio/mpeg">
+              <source src="https://playerservices.streamtheworld.com/api/livestream-redirect/PUDAHUEL_SC" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <!-- Agrega más estaciones de radio aquí -->
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/tf826bmbtrud.jpg" alt="Radio Rock & Pop Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Rock & Pop</h2>
+          <p class="radio-frequency">Frecuencia: 94.1 FM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://playerservices.streamtheworld.com/api/livestream-redirect/ROCK_AND_POPAAC_SC" type="audio/mpeg">
+              <source src="https://playerservices.streamtheworld.com/api/livestream-redirect/ROCK_AND_POPAAC_SC" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/5b6kRBtq2s-1.jpg" alt="Radio Carolina Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Carolina</h2>
+          <p class="radio-frequency">Frecuencia: 99.3 FM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://mdstrm.com/audio/637f68ddce4b1208597d8a86/live.m3u8" type="audio/mpeg">
+              <source src="https://mdstrm.com/audio/637f68ddce4b1208597d8a86/live.m3u8" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/huQcsrUJ9b-1.jpg" alt="Play FM Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Play FM</h2>
+          <p class="radio-frequency">Frecuencia: 100.3 FM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://mdstrm.com/audio/5c8d6406f98fbf269f57c82c/icecast.audio" type="audio/mpeg">
+              <source src="https://mdstrm.com/audio/5c8d6406f98fbf269f57c82c/icecast.audio" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/HmHnrRp9Ts-1.jpeg" alt="Radio Corazón Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Corazón</h2>
+          <p class="radio-frequency">Frecuencia: 103.3 FM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://playerservices.streamtheworld.com/api/livestream-redirect/CORAZONAAC_SC?csegid=12000" type="audio/mpeg">
+              <source src="https://playerservices.streamtheworld.com/api/livestream-redirect/CORAZONAAC_SC?csegid=12000" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/a6eyesg65lgh-1.jpg" alt="Radio Disney Chile Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Disney Chile</h2>
+          <p class="radio-frequency">Frecuencia: 95.3 FM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://playerservices.streamtheworld.com/api/livestream-redirect/DISNEY_CHI_SA_SC?dist=web-radiodisney-disneylatino" type="audio/mpeg">
+              <source src="https://playerservices.streamtheworld.com/api/livestream-redirect/DISNEY_CHI_SA_SC?dist=web-radiodisney-disneylatino" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/rWue2rVhYk.jpg" alt="Radio Universo Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Universo</h2>
+          <p class="radio-frequency">Frecuencia: 93.7 FM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://redirector.dps.live/universo/aac/icecast.audio" type="audio/mpeg">
+              <source src="https://redirector.dps.live/universo/aac/icecast.audio" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/kqBTQvKx37-1.png" alt="Radio Bio-Bio Santiago Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Bio-Bio Santiago</h2>
+          <p class="radio-frequency">Frecuencia: 106.1 FM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://redirector.dps.live/biobiosantiago/mp3/icecast.audio" type="audio/mpeg">
+              <source src="https://redirector.dps.live/biobiosantiago/mp3/icecast.audio" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/zemb8vbg8xml.png" alt="Radio Recuerdo Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Recuerdo</h2>
+          <p class="radio-frequency">Frecuencia: Online</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://sonando-us.digitalproserver.com/radiorecuerdos.mp3" type="audio/mpeg">
+              <source src="https://sonando-us.digitalproserver.com/radiorecuerdos.mp3" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/WPFsYaygAP.jpg" alt="Radio Activa 92.5 Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Activa</h2>
+          <p class="radio-frequency">Frecuencia: 92.5 FM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://playerservices.streamtheworld.com/api/livestream-redirect/ACTIVA_SC" type="audio/mpeg">
+              <source src="https://playerservices.streamtheworld.com/api/livestream-redirect/ACTIVA_SC" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/hgAs2ueYqC-1.png" alt="Radio Futuro FM Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Futuro FM</h2>
+          <p class="radio-frequency">Frecuencia: 88.9 FM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://playerservices.streamtheworld.com/api/livestream-redirect/FUTUROAAC_SC" type="audio/mpeg">
+              <source src="https://playerservices.streamtheworld.com/api/livestream-redirect/FUTUROAAC_SC" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/4ucHCg8xnR-1.jpeg" alt="Radio FM2 (FMDOS) Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio FM2 (FMDOS)</h2>
+          <p class="radio-frequency">Frecuencia: 98.5 FM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://playerservices.streamtheworld.com/api/livestream-redirect/FMDOSAAC_SC?csegid=12000" type="audio/mpeg">
+              <source src="https://playerservices.streamtheworld.com/api/livestream-redirect/FMDOSAAC_SC?csegid=12000" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/emqfyafhqvpn-1.jpg" alt="Los 40 Principales Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Los 40 Principales</h2>
+          <p class="radio-frequency">Frecuencia: 101.7 FM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://playerservices.streamtheworld.com/api/livestream-redirect/LOS40_CHILE_SC" type="audio/mpeg">
+              <source src="https://playerservices.streamtheworld.com/api/livestream-redirect/LOS40_CHILE_SC" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/wdtpfwKRzD.jpg" alt="Radio Duna Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Duna</h2>
+          <p class="radio-frequency">Frecuencia: 89.7 FM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://unlimited3-cl.dps.live/duna/gotardis/audio/now/livestream1.m3u8" type="audio/mpeg">
+              <source src="https://unlimited3-cl.dps.live/duna/gotardis/audio/now/livestream1.m3u8" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/RCsaymrVvr.png" alt="Radio El Conquistador Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">El Conquistador</h2>
+          <p class="radio-frequency">Frecuencia: 91.3 FM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://stream10.usastreams.com/9314/stream/" type="audio/mpeg">
+              <source src="https://stream10.usastreams.com/9314/stream/" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/2z37b4dgdrsu-1.png" alt="TeleTrece Radio (T13) Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">TeleTrece Radio (T13)</h2>
+          <p class="radio-frequency">Frecuencia: 103.3 FM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://mdstrm.com/audio/5c915613519bce27671c4caa/live.m3u8" type="audio/mpeg">
+              <source src="https://mdstrm.com/audio/5c915613519bce27671c4caa/live.m3u8" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/MUCVXLeC39.png" alt="Radio Sonar FM Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Sonar FM</h2>
+          <p class="radio-frequency">Frecuencia: 105.3 FM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://mdstrm.com/audio/5c915724519bce27671c4d15/icecast.audio" type="audio/mpeg">
+              <source src="https://mdstrm.com/audio/5c915724519bce27671c4d15/icecast.audio" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/n2qy9qvmmbzd.jpg" alt="Radio Carabineros de Chile Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Carabineros de Chile</h2>
+          <p class="radio-frequency">Frecuencia: 98.1 FM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://sonic01.instainternet.com/8374/stream" type="audio/mpeg">
+              <source src="https://sonic01.instainternet.com/8374/stream" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/BynF4qv3Sj-1.png" alt="Radio Unlimited80s Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Unlimited80s</h2>
+          <p class="radio-frequency">Frecuencia: Online</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://live.streamthe.world/unlimited80s" type="audio/mpeg">
+              <source src="https://live.streamthe.world/unlimited80s" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/htmhtfu5smqc-1.png" alt="Radio Paula Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Paula</h2>
+          <p class="radio-frequency">Frecuencia: 104.9 FM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://unlimited2-cl.dps.live/biobiofm/mp3/icecast.audio" type="audio/mpeg">
+              <source src="https://unlimited2-cl.dps.live/biobiofm/aac/icecast.audio" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/jwxJJDYqSs-1.png" alt="Radio Universidad de Chile Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Universidad de Chile</h2>
+          <p class="radio-frequency">Frecuencia: 102.5 FM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="http://streamuchile.teslati.com/liveruch" type="audio/mpeg">
+              <source src="http://streamuchile.teslati.com/liveruch" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/vhfca7h3mbmb.png" alt="Radio Universidad de Chile II Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Universidad de Chile II</h2>
+          <p class="radio-frequency">Frecuencia: Online</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="http://streamuchile.teslati.com:9870/;" type="audio/mpeg">
+              <source src="http://streamuchile.teslati.com:9870/;" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/c9c6yvyandj6-1.gif" alt="Radio Universidad Católica Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Universidad Católica</h2>
+          <p class="radio-frequency">Frecuencia: 660 AM | Online</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="http://146.155.190.111:80/;" type="audio/mpeg">
+              <source src="http://146.155.190.111:80/;" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/HUArzrv66U-1.jpg" alt="UCV Radio Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Universidad Católica de Valparaiso</h2>
+          <p class="radio-frequency">Frecuencia: 103.5 FM | Valparaiso</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="http://sonando.us.digitalproserver.com/ucvradio" type="audio/mpeg">
+              <source src="http://sonando.us.digitalproserver.com/ucvradio" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/BJrccJ5mba-1.png" alt="Universidad de Antofagasta Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Universidad de Concepción</h2>
+          <p class="radio-frequency">Frecuencia: 95.1 FM | Concepción</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://audio.divalstream.com:7019/stream" type="audio/mpeg">
+              <source src="https://audio.divalstream.com:7019/stream" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/69xytnzw8jdu-1.png" alt="Universidad de Antofagasta Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Universidad de Antofagasta</h2>
+          <p class="radio-frequency">Frecuencia: 99.9 FM | Antofagasta</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://us9.maindigitalstream.com/ssl/7422" type="audio/mpeg">
+              <source src="https://us9.maindigitalstream.com/ssl/7422" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/uxtQcLXPTL.png" alt="Radio Valparaiso Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Valparaiso</h2>
+          <p class="radio-frequency">Frecuencia: 102.5.7 FM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="http://200.24.229.253:8250/listen.pls" type="audio/mpeg">
+              <source src="http://200.24.229.253:8250/listen.pls" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/xv5bf5tkhgte.jpg" alt="Radio Pauta Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Pauta</h2>
+          <p class="radio-frequency">Frecuencia: 100.5 FM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://radio.pauta.cl/playlist/stream.m3u8" type="audio/mpeg">
+              <source src="https://radio.pauta.cl/playlist/stream.m3u8" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/mbrr57xlmkwz.jpeg" alt="Radio Ñuble Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Ñuble</h2>
+          <p class="radio-frequency">Frecuencia: Online </p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="http://streaming.comunicacioneschile.net:9358" type="audio/mpeg">
+              <source src="http://streaming.comunicacioneschile.net:9358" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/prdaseknndup.png" alt="Radio Carnaval - Viña del Mar Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Carnaval - Viña del Mar</h2>
+          <p class="radio-frequency">Frecuencia: 98.1 FM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://sonando-us.digitalproserver.com/carnaval_vinadelmar.aac" type="audio/mpeg">
+              <source src="https://sonando-us.digitalproserver.com/carnaval_vinadelmar.aac" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/26hfjjqc2ulp-1.png" alt="Radio Carnaval - Antofagasta">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Carnaval - Antofagasta</h2>
+          <p class="radio-frequency">Frecuencia: 96.5 FM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://sonando-us.digitalproserver.com/carnaval_antofagasta.aac" type="audio/mpeg">
+              <source src="https://sonando-us.digitalproserver.com/carnaval_antofagasta.aac" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/l8dnb8epxsk9-1.png" alt="Radio Carnaval - Valle del Aconcagua Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Carnaval - Valle del Aconcagua</h2>
+          <p class="radio-frequency">Frecuencia: 98.3 FM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://sonando-us.digitalproserver.com/carnaval_aconcagua.aac" type="audio/mpeg">
+              <source src="https://sonando-us.digitalproserver.com/carnaval_aconcagua.aac" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/zwawwhn3jeek.png" alt="Radio Carnaval - La Calera Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Carnaval - La Calera</h2>
+          <p class="radio-frequency">Frecuencia: 91.9 FM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://sonando-us.digitalproserver.com/carnaval_quillota.aac" type="audio/mpeg">
+              <source src="https://sonando-us.digitalproserver.com/carnaval_quillota.aac" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/azskx9d5xrvl-1.png" alt="13c Radio Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">13c Radio</h2>
+          <p class="radio-frequency">Frecuencia: 102.1 FM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://mdstrm.com/audio/5c915497c6fd7c085b29169d/icecast.audio" type="audio/mpeg">
+              <source src="https://mdstrm.com/audio/5c915497c6fd7c085b29169d/icecast.audio" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/rjeebzs9z8td.png" alt="Radio Horizonte Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Horizonte</h2>
+          <p class="radio-frequency">Frecuencia: 103.3 FM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://mdstrm.com/audio/601415b58308405b0d11c82a/icecast.audio" type="audio/mpeg">
+              <source src="https://mdstrm.com/audio/601415b58308405b0d11c82a/icecast.audio" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/fm2ystdvkbmt-1.jpg" alt="Bomberos de Chile Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Bomberos de Chile</h2>
+          <p class="radio-frequency">Frecuencia: Online</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://chileservidores.cl/audio/?p=9938&t=0" type="audio/mpeg">
+              <source src="https://chileservidores.cl/audio/?p=9938&t=0" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/n9vuavvpykka.jpg" alt="Radio Patagual Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Patagual</h2>
+          <p class="radio-frequency">Frecuencia: 1530 AM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://srv6.sonicpanel.cl/8156/stream" type="audio/mpeg">
+              <source src="https://srv6.sonicpanel.cl/8156/stream" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/TFLkdwvpw6.jpg" alt="Radio Nueva Estación Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Nueva Estación</h2>
+          <p class="radio-frequency">Frecuencia: 107.1 FM | Yumbel</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://sonicpanel.chileservidores.cl/8038/stream" type="audio/mpeg">
+              <source src="https://sonicpanel.chileservidores.cl/8038/stream" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/Qn3vzU5Q6Q.png" alt="Suena a Chile Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Suena a Chile Radio</h2>
+          <p class="radio-frequency">Frecuencia: Online</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="http://stream.zeno.fm/ydrn168efuhvv" type="audio/mpeg">
+              <source src="http://stream.zeno.fm/ydrn168efuhvv" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+       <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/crF7wYdhHN-1.png" alt="Radio Sunset Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Sunset</h2>
+          <p class="radio-frequency">Frecuencia: Online</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://s38.radiolize.com/radio/8010/radio.mp3" type="audio/mpeg">
+              <source src="https://s38.radiolize.com/radio/8010/radio.mp3" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/Hd6c3RbKTF-1.png" alt="Radio Mystic Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Mystic</h2>
+          <p class="radio-frequency">Frecuencia: Online</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://sonic.portalfoxmix.club/8352/stream" type="audio/mpeg">
+              <source src="https://sonic.portalfoxmix.club/8352/stream" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/hgeqjppfyhzu-1.jpg" alt="Teleangol Radio Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Teleangol Radio</h2>
+          <p class="radio-frequency">Frecuencia: Online</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://unlimited1-us.dps.live/teleangolradio/teleangolradio.smil/playlist.m3u8" type="audio/mpeg">
+              <source src="https://unlimited1-us.dps.live/teleangolradio/teleangolradio.smil/playlist.m3u8" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</body>
+</html><!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estaciones de Radio</title>
+  <style>
+    /* Estilos generales */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    h1 {
+      text-align: center;
+      margin-top: 0;
+    }
+    
+    .radio-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .radio-list-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      padding: 10px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .radio-logo {
+      max-width: 100px;
+      height: auto;
+      margin-right: 20px;
+    }
+    
+    .radio-info {
+      flex-grow: 1;
+    }
+    
+    .radio-name {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 0;
+    }
+    
+    .radio-frequency {
+      font-size: 14px;
+      margin: 5px 0;
+    }
+    
+    .radio-player {
+      margin-top: 10px;
+    }
+    
+    /* Estilos para dispositivos móviles */
+    @media (max-width: 576px) {
+      .container {
+        padding: 10px;
+      }
+      
+      .radio-list-item {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      
+      .radio-logo {
+        max-width: 80px;
+      }
+      
+      .radio-info {
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Estaciones de Radio</h1>
+    <h5>Las Frecuencias mostradas a continuación, pertenece el área metropolitana de Santiago. Consulte el apartado de frecuencia de la aplicación, si se encuentra en otra ubicación.</h5>
+    <ul class="radio-list">
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/LPbE98zKga-1.png" alt="ADN Radio Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">ADN Radio</h2>
+          <p class="radio-frequency">Frecuencia: 91.7 FM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://playerservices.streamtheworld.com/api/livestream-redirect/ADNAAC_SC" type="audio/mpeg">
+              <source src="https://playerservices.streamtheworld.com/api/livestream-redirect/ADNAAC_SC" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/yQWd3pdnYE.jpg" alt="Radio Imagina Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Imagina</h2>
+          <p class="radio-frequency">Frecuencia: 88.1 FM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://playerservices.streamtheworld.com/api/livestream-redirect/IMAGINAAAC_SC?csegid=12000" type="audio/mpeg">
+              <source src="https://playerservices.streamtheworld.com/api/livestream-redirect/IMAGINAAAC_SC?csegid=12000" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/dZrufzms4G-1.jpg" alt="Radio Cooperativa Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Cooperativa</h2>
+          <p class="radio-frequency">Frecuencia: 93.3 FM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://unlimited4-us.dps.live/cooperativafm/mp3/icecast.audio" type="audio/mpeg">
+              <source src="https://unlimited4-us.dps.live/cooperativafm/mp3/icecast.audio" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/hNtDVvwQqV-1.jpg" alt="Radio Pudahuel Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Pudahuel</h2>
+          <p class="radio-frequency">Frecuencia: 90.5 FM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://playerservices.streamtheworld.com/api/livestream-redirect/PUDAHUEL_SC" type="audio/mpeg">
+              <source src="https://playerservices.streamtheworld.com/api/livestream-redirect/PUDAHUEL_SC" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <!-- Agrega más estaciones de radio aquí -->
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/tf826bmbtrud.jpg" alt="Radio Rock & Pop Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Rock & Pop</h2>
+          <p class="radio-frequency">Frecuencia: 94.1 FM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://playerservices.streamtheworld.com/api/livestream-redirect/ROCK_AND_POPAAC_SC" type="audio/mpeg">
+              <source src="https://playerservices.streamtheworld.com/api/livestream-redirect/ROCK_AND_POPAAC_SC" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/5b6kRBtq2s-1.jpg" alt="Radio Carolina Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Carolina</h2>
+          <p class="radio-frequency">Frecuencia: 99.3 FM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://mdstrm.com/audio/637f68ddce4b1208597d8a86/live.m3u8" type="audio/mpeg">
+              <source src="https://mdstrm.com/audio/637f68ddce4b1208597d8a86/live.m3u8" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/huQcsrUJ9b-1.jpg" alt="Play FM Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Play FM</h2>
+          <p class="radio-frequency">Frecuencia: 100.3 FM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://mdstrm.com/audio/5c8d6406f98fbf269f57c82c/icecast.audio" type="audio/mpeg">
+              <source src="https://mdstrm.com/audio/5c8d6406f98fbf269f57c82c/icecast.audio" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/HmHnrRp9Ts-1.jpeg" alt="Radio Corazón Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Corazón</h2>
+          <p class="radio-frequency">Frecuencia: 103.3 FM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://playerservices.streamtheworld.com/api/livestream-redirect/CORAZONAAC_SC?csegid=12000" type="audio/mpeg">
+              <source src="https://playerservices.streamtheworld.com/api/livestream-redirect/CORAZONAAC_SC?csegid=12000" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/a6eyesg65lgh-1.jpg" alt="Radio Disney Chile Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Disney Chile</h2>
+          <p class="radio-frequency">Frecuencia: 95.3 FM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://playerservices.streamtheworld.com/api/livestream-redirect/DISNEY_CHI_SA_SC?dist=web-radiodisney-disneylatino" type="audio/mpeg">
+              <source src="https://playerservices.streamtheworld.com/api/livestream-redirect/DISNEY_CHI_SA_SC?dist=web-radiodisney-disneylatino" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/rWue2rVhYk.jpg" alt="Radio Universo Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Universo</h2>
+          <p class="radio-frequency">Frecuencia: 93.7 FM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://redirector.dps.live/universo/aac/icecast.audio" type="audio/mpeg">
+              <source src="https://redirector.dps.live/universo/aac/icecast.audio" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/kqBTQvKx37-1.png" alt="Radio Bio-Bio Santiago Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Bio-Bio Santiago</h2>
+          <p class="radio-frequency">Frecuencia: 106.1 FM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://redirector.dps.live/biobiosantiago/mp3/icecast.audio" type="audio/mpeg">
+              <source src="https://redirector.dps.live/biobiosantiago/mp3/icecast.audio" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/zemb8vbg8xml.png" alt="Radio Recuerdo Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Recuerdo</h2>
+          <p class="radio-frequency">Frecuencia: Online</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://sonando-us.digitalproserver.com/radiorecuerdos.mp3" type="audio/mpeg">
+              <source src="https://sonando-us.digitalproserver.com/radiorecuerdos.mp3" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/WPFsYaygAP.jpg" alt="Radio Activa 92.5 Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Activa</h2>
+          <p class="radio-frequency">Frecuencia: 92.5 FM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://playerservices.streamtheworld.com/api/livestream-redirect/ACTIVA_SC" type="audio/mpeg">
+              <source src="https://playerservices.streamtheworld.com/api/livestream-redirect/ACTIVA_SC" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/hgAs2ueYqC-1.png" alt="Radio Futuro FM Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Futuro FM</h2>
+          <p class="radio-frequency">Frecuencia: 88.9 FM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://playerservices.streamtheworld.com/api/livestream-redirect/FUTUROAAC_SC" type="audio/mpeg">
+              <source src="https://playerservices.streamtheworld.com/api/livestream-redirect/FUTUROAAC_SC" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/4ucHCg8xnR-1.jpeg" alt="Radio FM2 (FMDOS) Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio FM2 (FMDOS)</h2>
+          <p class="radio-frequency">Frecuencia: 98.5 FM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://playerservices.streamtheworld.com/api/livestream-redirect/FMDOSAAC_SC?csegid=12000" type="audio/mpeg">
+              <source src="https://playerservices.streamtheworld.com/api/livestream-redirect/FMDOSAAC_SC?csegid=12000" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/emqfyafhqvpn-1.jpg" alt="Los 40 Principales Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Los 40 Principales</h2>
+          <p class="radio-frequency">Frecuencia: 101.7 FM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://playerservices.streamtheworld.com/api/livestream-redirect/LOS40_CHILE_SC" type="audio/mpeg">
+              <source src="https://playerservices.streamtheworld.com/api/livestream-redirect/LOS40_CHILE_SC" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/wdtpfwKRzD.jpg" alt="Radio Duna Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Duna</h2>
+          <p class="radio-frequency">Frecuencia: 89.7 FM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://unlimited3-cl.dps.live/duna/gotardis/audio/now/livestream1.m3u8" type="audio/mpeg">
+              <source src="https://unlimited3-cl.dps.live/duna/gotardis/audio/now/livestream1.m3u8" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/RCsaymrVvr.png" alt="Radio El Conquistador Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">El Conquistador</h2>
+          <p class="radio-frequency">Frecuencia: 91.3 FM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://stream10.usastreams.com/9314/stream/" type="audio/mpeg">
+              <source src="https://stream10.usastreams.com/9314/stream/" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/2z37b4dgdrsu-1.png" alt="TeleTrece Radio (T13) Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">TeleTrece Radio (T13)</h2>
+          <p class="radio-frequency">Frecuencia: 103.3 FM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://mdstrm.com/audio/5c915613519bce27671c4caa/live.m3u8" type="audio/mpeg">
+              <source src="https://mdstrm.com/audio/5c915613519bce27671c4caa/live.m3u8" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/MUCVXLeC39.png" alt="Radio Sonar FM Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Sonar FM</h2>
+          <p class="radio-frequency">Frecuencia: 105.3 FM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://mdstrm.com/audio/5c915724519bce27671c4d15/icecast.audio" type="audio/mpeg">
+              <source src="https://mdstrm.com/audio/5c915724519bce27671c4d15/icecast.audio" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/n2qy9qvmmbzd.jpg" alt="Radio Carabineros de Chile Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Carabineros de Chile</h2>
+          <p class="radio-frequency">Frecuencia: 98.1 FM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://sonic01.instainternet.com/8374/stream" type="audio/mpeg">
+              <source src="https://sonic01.instainternet.com/8374/stream" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/BynF4qv3Sj-1.png" alt="Radio Unlimited80s Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Unlimited80s</h2>
+          <p class="radio-frequency">Frecuencia: Online</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://live.streamthe.world/unlimited80s" type="audio/mpeg">
+              <source src="https://live.streamthe.world/unlimited80s" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/htmhtfu5smqc-1.png" alt="Radio Paula Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Paula</h2>
+          <p class="radio-frequency">Frecuencia: 104.9 FM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://unlimited2-cl.dps.live/biobiofm/mp3/icecast.audio" type="audio/mpeg">
+              <source src="https://unlimited2-cl.dps.live/biobiofm/aac/icecast.audio" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/jwxJJDYqSs-1.png" alt="Radio Universidad de Chile Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Universidad de Chile</h2>
+          <p class="radio-frequency">Frecuencia: 102.5 FM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="http://streamuchile.teslati.com/liveruch" type="audio/mpeg">
+              <source src="http://streamuchile.teslati.com/liveruch" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/vhfca7h3mbmb.png" alt="Radio Universidad de Chile II Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Universidad de Chile II</h2>
+          <p class="radio-frequency">Frecuencia: Online</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="http://streamuchile.teslati.com:9870/;" type="audio/mpeg">
+              <source src="http://streamuchile.teslati.com:9870/;" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/c9c6yvyandj6-1.gif" alt="Radio Universidad Católica Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Universidad Católica</h2>
+          <p class="radio-frequency">Frecuencia: 660 AM | Online</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="http://146.155.190.111:80/;" type="audio/mpeg">
+              <source src="http://146.155.190.111:80/;" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/HUArzrv66U-1.jpg" alt="UCV Radio Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Universidad Católica de Valparaiso</h2>
+          <p class="radio-frequency">Frecuencia: 103.5 FM | Valparaiso</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="http://sonando.us.digitalproserver.com/ucvradio" type="audio/mpeg">
+              <source src="http://sonando.us.digitalproserver.com/ucvradio" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/BJrccJ5mba-1.png" alt="Universidad de Antofagasta Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Universidad de Concepción</h2>
+          <p class="radio-frequency">Frecuencia: 95.1 FM | Concepción</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://audio.divalstream.com:7019/stream" type="audio/mpeg">
+              <source src="https://audio.divalstream.com:7019/stream" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/69xytnzw8jdu-1.png" alt="Universidad de Antofagasta Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Universidad de Antofagasta</h2>
+          <p class="radio-frequency">Frecuencia: 99.9 FM | Antofagasta</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://us9.maindigitalstream.com/ssl/7422" type="audio/mpeg">
+              <source src="https://us9.maindigitalstream.com/ssl/7422" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/uxtQcLXPTL.png" alt="Radio Valparaiso Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Valparaiso</h2>
+          <p class="radio-frequency">Frecuencia: 102.5.7 FM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="http://200.24.229.253:8250/listen.pls" type="audio/mpeg">
+              <source src="http://200.24.229.253:8250/listen.pls" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/xv5bf5tkhgte.jpg" alt="Radio Pauta Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Pauta</h2>
+          <p class="radio-frequency">Frecuencia: 100.5 FM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://radio.pauta.cl/playlist/stream.m3u8" type="audio/mpeg">
+              <source src="https://radio.pauta.cl/playlist/stream.m3u8" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/mbrr57xlmkwz.jpeg" alt="Radio Ñuble Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Ñuble</h2>
+          <p class="radio-frequency">Frecuencia: Online </p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="http://streaming.comunicacioneschile.net:9358" type="audio/mpeg">
+              <source src="http://streaming.comunicacioneschile.net:9358" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/prdaseknndup.png" alt="Radio Carnaval - Viña del Mar Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Carnaval - Viña del Mar</h2>
+          <p class="radio-frequency">Frecuencia: 98.1 FM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://sonando-us.digitalproserver.com/carnaval_vinadelmar.aac" type="audio/mpeg">
+              <source src="https://sonando-us.digitalproserver.com/carnaval_vinadelmar.aac" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/26hfjjqc2ulp-1.png" alt="Radio Carnaval - Antofagasta">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Carnaval - Antofagasta</h2>
+          <p class="radio-frequency">Frecuencia: 96.5 FM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://sonando-us.digitalproserver.com/carnaval_antofagasta.aac" type="audio/mpeg">
+              <source src="https://sonando-us.digitalproserver.com/carnaval_antofagasta.aac" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/l8dnb8epxsk9-1.png" alt="Radio Carnaval - Valle del Aconcagua Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Carnaval - Valle del Aconcagua</h2>
+          <p class="radio-frequency">Frecuencia: 98.3 FM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://sonando-us.digitalproserver.com/carnaval_aconcagua.aac" type="audio/mpeg">
+              <source src="https://sonando-us.digitalproserver.com/carnaval_aconcagua.aac" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/zwawwhn3jeek.png" alt="Radio Carnaval - La Calera Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Carnaval - La Calera</h2>
+          <p class="radio-frequency">Frecuencia: 91.9 FM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://sonando-us.digitalproserver.com/carnaval_quillota.aac" type="audio/mpeg">
+              <source src="https://sonando-us.digitalproserver.com/carnaval_quillota.aac" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/azskx9d5xrvl-1.png" alt="13c Radio Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">13c Radio</h2>
+          <p class="radio-frequency">Frecuencia: 102.1 FM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://mdstrm.com/audio/5c915497c6fd7c085b29169d/icecast.audio" type="audio/mpeg">
+              <source src="https://mdstrm.com/audio/5c915497c6fd7c085b29169d/icecast.audio" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/rjeebzs9z8td.png" alt="Radio Horizonte Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Horizonte</h2>
+          <p class="radio-frequency">Frecuencia: 103.3 FM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://mdstrm.com/audio/601415b58308405b0d11c82a/icecast.audio" type="audio/mpeg">
+              <source src="https://mdstrm.com/audio/601415b58308405b0d11c82a/icecast.audio" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/fm2ystdvkbmt-1.jpg" alt="Bomberos de Chile Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Bomberos de Chile</h2>
+          <p class="radio-frequency">Frecuencia: Online</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://chileservidores.cl/audio/?p=9938&t=0" type="audio/mpeg">
+              <source src="https://chileservidores.cl/audio/?p=9938&t=0" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/n9vuavvpykka.jpg" alt="Radio Patagual Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Patagual</h2>
+          <p class="radio-frequency">Frecuencia: 1530 AM</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://srv6.sonicpanel.cl/8156/stream" type="audio/mpeg">
+              <source src="https://srv6.sonicpanel.cl/8156/stream" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/TFLkdwvpw6.jpg" alt="Radio Nueva Estación Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Nueva Estación</h2>
+          <p class="radio-frequency">Frecuencia: 107.1 FM | Yumbel</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://sonicpanel.chileservidores.cl/8038/stream" type="audio/mpeg">
+              <source src="https://sonicpanel.chileservidores.cl/8038/stream" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/Qn3vzU5Q6Q.png" alt="Suena a Chile Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Suena a Chile Radio</h2>
+          <p class="radio-frequency">Frecuencia: Online</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="http://stream.zeno.fm/ydrn168efuhvv" type="audio/mpeg">
+              <source src="http://stream.zeno.fm/ydrn168efuhvv" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+       <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/crF7wYdhHN-1.png" alt="Radio Sunset Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Sunset</h2>
+          <p class="radio-frequency">Frecuencia: Online</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://s38.radiolize.com/radio/8010/radio.mp3" type="audio/mpeg">
+              <source src="https://s38.radiolize.com/radio/8010/radio.mp3" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/Hd6c3RbKTF-1.png" alt="Radio Mystic Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Radio Mystic</h2>
+          <p class="radio-frequency">Frecuencia: Online</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://sonic.portalfoxmix.club/8352/stream" type="audio/mpeg">
+              <source src="https://sonic.portalfoxmix.club/8352/stream" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+      <li class="radio-list-item">
+        <img class="radio-logo" src="https://www.radiosonline.cl/wp-content/uploads/2023/02/hgeqjppfyhzu-1.jpg" alt="Teleangol Radio Logo">
+        <div class="radio-info">
+          <h2 class="radio-name">Teleangol Radio</h2>
+          <p class="radio-frequency">Frecuencia: Online</p>
+          <div class="radio-player">
+            <audio controls>
+              <source src="https://unlimited1-us.dps.live/teleangolradio/teleangolradio.smil/playlist.m3u8" type="audio/mpeg">
+              <source src="https://unlimited1-us.dps.live/teleangolradio/teleangolradio.smil/playlist.m3u8" type="audio/aac">
+            </audio>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
